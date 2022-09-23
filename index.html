@@ -50,10 +50,8 @@
             </div>
             <h5 class="mt-5 mb-5">Hello,  We Are Getting Married </h5>
             <h5 class="font-weight mt-3">The Wedding Of</h5>
-            <h2 class="mt-4 mb-4 display-4">
-                                    Ayu & Iki
-                            </h2>
-            <h5 class="font-weight date-sparator">12 February 2023</h5>
+            <h2 class="mt-4 mb-4 display-4">Ayu & Iki</h2>
+            <h5 class="font-weight date-sparator">08 Oktober 2022</h5>
             <br><br>
             <button type=button class="btn btn-md btn-secondary open_invitation px-5" style="z-index:100">Open Invitation</button>
         </div>
@@ -68,7 +66,7 @@
                                 <img src=https://demo.datengdong.com/themes/dancingpiano/images/flower.png alt="flower" style="max-width:100px;max-height:100px;margin-bottom:50px">
                 <h3>The Wedding Of</h3>
                                     <h1 class="display-1 font-weight-bold mb-4">Ayu & Iki</h1>
-                                <p class="date-sparator mb-3">12 February 2023</p>
+                                <p class="date-sparator mb-3">08 Oktober 2022</p>
                                     <div class="mb-1 to">
                         <i>Kepada Yth <br> Bapak/Ibu/Saudara/i</i>
                         <h5 class="font-weight-bold mt-1 guest">Guest</h5>
@@ -615,61 +613,6 @@
             <source src=/music/Endless-Love.mp3 type=audio/mp3 ></audio>
     </div>
     <div class="play-pause btn-play-pause" id="button-control"><img src=https://demo.datengdong.com/images/play-pause.svg alt="play pause" width=25px></div>
-                <button type=button class="btn-donation" data-toggle="modal" data-target="#modalGift">
-        <img src=https://demo.datengdong.com/images/gift-donation.png alt="donation" style="width:18px;margin-right:5px"> Kirim Hadiah
-    </button>
-    <div class="modal fade" id="modalGift" tabindex="-1" role="dialog" aria-labelledby="modalGiftLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalGiftLabel">Kirim Hadiah</h5>
-                    <button type=button class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="text-center mb-3">
-                        <img src=https://demo.datengdong.com/images/love.png alt="donation" style="max-width: 60px;">
-                        <h5 class="font-bold text-center">Kirim Hadiah<br><small>Untuk Romeo &amp; Juliet</small></h5>
-                    </div>
-                                                            <div class="row">
-                        <div class="col-8">
-                            <b>BCA </b><br>
-                                                        <span onClick='copyText(this)'>123456789 <img src=https://demo.datengdong.com/images/copy.png style="height:13px;margin-top:-5px;cursor:pointer"></span><br>
-                                                        a/n Romeo <br>
-                            
-                        </div>
-                        <div class="col-4">
-                            <img src=https://demo.datengdong.com/images/payment/bca.jpg alt="Bank " style="width:100%;margin-top:25px">
-                        </div>
-                    </div>
-                    
-                                        <hr>
-                                                                                <div class="row">
-                        <div class="col-8">
-                            <b>ALAMAT </b><br>
-                                                        a/n Juliet <br>
-                            Jl. Lorem Ipsum No.1, Kec. Dolor, Kab. Sit Amet
-                        </div>
-                        <div class="col-4">
-                            <img src=https://demo.datengdong.com/images/payment/alamat.jpg alt="Bank " style="width:100%;margin-top:25px">
-                        </div>
-                    </div>
-                    
-                                        <hr>
-                                                                                <div class="row">
-                        <div class="col-sm-10 offset-sm-1">
-                            <img src=https://demo.datengdong.com/uploads/original/qris/iao8blunwz.png alt="Qris" class="w-100">
-                        </div>
-                        <div class="col-sm-12 text-center">
-                            OVO
-                        </div>
-                    </div>
-                    
-                                                        </div>
-            </div>
-        </div>
-    </div>
         <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js></script>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js></script>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.3/simple-lightbox.min.js></script>
@@ -697,8 +640,8 @@
 
                 const queryString = window.location.search;
                 const urlParams = new URLSearchParams(queryString);
-                const name = urlParams.get('guest')
-                $(".guest").html(name)
+                const to = urlParams.get('to')
+                $(".guest").html(to)
         function copyText(element) {
             var range, selection, worked;
 
