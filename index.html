@@ -71,8 +71,8 @@
                                 <p class="date-sparator mb-3">12 February 2023</p>
                                     <div class="mb-1 to">
                         <i>Kepada Yth <br> Bapak/Ibu/Saudara/i</i>
-                        <h5 class="font-weight-bold mt-1">Prof. Supardi MM</h5>
-                        <span class="font-italic"> di Yogyakarta </span>
+                        <h5 class="font-weight-bold mt-1 guest">Guest</h5>
+                        <span class="font-italic"> di Gorontalo </span>
                     </div>
                             </div>
         </header>
@@ -612,7 +612,7 @@
     </footer>
             <div style="height:50px;width:60px;position: absolute;bottom:0;z-index:-1;visibility: hidden;">
         <audio id="player" autoplay loop>
-            <source src=https://demo.datengdong.com/uploads/musics/11.mp3 type=audio/mp3 ></audio>
+            <source src=/music/Endless-Love.mp3 type=audio/mp3 ></audio>
     </div>
     <div class="play-pause btn-play-pause" id="button-control"><img src=https://demo.datengdong.com/images/play-pause.svg alt="play pause" width=25px></div>
                 <button type=button class="btn-donation" data-toggle="modal" data-target="#modalGift">
@@ -694,11 +694,11 @@
         }, !1);
     </script>
             <script>
+
                 const queryString = window.location.search;
                 const urlParams = new URLSearchParams(queryString);
-                // console.log(product);
-                alert(urlParams);
-
+                const name = urlParams.get('guest')
+                $(".guest").html(name)
         function copyText(element) {
             var range, selection, worked;
 
