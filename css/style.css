@@ -12,6 +12,7 @@
 #music {
     display: none;
 }
+
 .play-pause {
     display: inline-block;
     background: #fff;
@@ -60,4 +61,7 @@
     .modal-sm {
         max-width: 330px;
     }
+}
+:root {
+  color-scheme: only light;
 }
