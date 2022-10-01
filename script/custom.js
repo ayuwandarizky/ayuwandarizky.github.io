@@ -118,7 +118,7 @@ $('.gallery a').simpleLightbox({
     disableScroll: true,
     disableRightClick: true
 });
-var countDownDate = new Date("08 October 2022 14:00:00").getTime(), x = setInterval(function () { var e = (new Date).getTime(), n = countDownDate - e, t = Math.floor(n / 864e5), a = Math.floor(n % 864e5 / 36e5), o = Math.floor(n % 36e5 / 6e4), m = Math.floor(n % 6e4 / 1e3); document.getElementsByClassName("days")[0].innerHTML = t, document.getElementsByClassName("hours")[0].innerHTML = a, document.getElementsByClassName("minutes")[0].innerHTML = o, document.getElementsByClassName("seconds")[0].innerHTML = m, n < 0 && (clearInterval(x), document.getElementsByClassName("expired").innerHTML = "EXPIRED") }, 1e3);
+var countDownDate = new Date("08 October 2022 19:00:00").getTime(), x = setInterval(function () { var e = (new Date).getTime(), n = countDownDate - e, t = Math.floor(n / 864e5), a = Math.floor(n % 864e5 / 36e5), o = Math.floor(n % 36e5 / 6e4), m = Math.floor(n % 6e4 / 1e3); document.getElementsByClassName("days")[0].innerHTML = t, document.getElementsByClassName("hours")[0].innerHTML = a, document.getElementsByClassName("minutes")[0].innerHTML = o, document.getElementsByClassName("seconds")[0].innerHTML = m, n < 0 && (clearInterval(x), document.getElementsByClassName("expired").innerHTML = "EXPIRED") }, 1e3);
 
 window.addEventListener("contextmenu", function (e) {
     e.preventDefault()
